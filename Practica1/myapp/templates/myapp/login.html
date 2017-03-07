@@ -1,0 +1,10 @@
+{% extends 'myapp/Base.html'%}
+
+{% block title%} login {%endblock%}
+{% block content%}
+<form method='post'>
+  {%csrf_token%}
+  {{form.as_p}}
+  <button type='submit'> Ingresar </button>
+</form>
+{%endblock%}

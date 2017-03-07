@@ -1,0 +1,9 @@
+{% extends 'myapp/Base.html' %}
+
+{% block title %} Perfil {% endblock %}
+
+{% block content %}
+<h1> Perfil de usuario </h1>
+<p> <strong> Bienvenido: {{user.first_name}}</strong></p>
+<p> Si deseas salir <a href= '{%url "logout"%}'>pulsa aquí</a> </p>
+{% endblock %}

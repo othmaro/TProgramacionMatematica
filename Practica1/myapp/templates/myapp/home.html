@@ -1,0 +1,9 @@
+{% extends 'myapp/Base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<h1> Bienvenido a nuestra primer aplicación web </h1>
+<p> Primera vez que nos visitas,  <a href = '{% url "registro"%}'>regístrate aquí </a> </p>
+<p> Ya tienes usuario <a href= '{%url "login"%}'>ingresa aquí</a> </p>
+{% endblock %}
